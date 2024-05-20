@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include lab_app *.css
+recursive-include lab_app *.csv
+recursive-include lab_app *.html
+recursive-include lab_app *.ico
+recursive-include lab_app *.js
+recursive-include lab_app *.json
+recursive-include lab_app *.md
+recursive-include lab_app *.png
+recursive-include lab_app *.py
+recursive-include lab_app *.svg
+recursive-include lab_app *.txt
+recursive-exclude lab_app *.pyc
