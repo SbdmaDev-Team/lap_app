@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "creation": "2024-10-19 23:55:05.452359",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_aname",
+  "reference_ename",
+  "reference_attach",
+  "enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reference Aname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_ename",
+   "fieldtype": "Data",
+   "label": "Reference Ename"
+  },
+  {
+   "fieldname": "reference_attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Reference Attach"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-19 23:55:05.452359",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "International References",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

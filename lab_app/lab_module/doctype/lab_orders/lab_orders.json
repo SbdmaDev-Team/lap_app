@@ -1,0 +1,103 @@
+{
+ "_comments": "[]",
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:ORD-{year}-{####}",
+ "creation": "2024-05-27 22:29:48.102741",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_no",
+  "order_date",
+  "column_break_3",
+  "year",
+  "ordersource_name",
+  "status",
+  "note",
+  "section_break_8",
+  "order_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Int",
+   "label": "order_no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "order_date",
+   "reqd": 1
+  },
+  {
+   "default": "2024",
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "year"
+  },
+  {
+   "fieldname": "ordersource_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "OrderSource_name",
+   "options": "lab_order_source",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "status"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "note"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Table",
+   "label": "order_name",
+   "options": "lab_order_details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-03 21:04:04.393383",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

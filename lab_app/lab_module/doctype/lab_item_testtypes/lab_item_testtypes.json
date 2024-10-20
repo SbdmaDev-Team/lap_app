@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "creation": "2024-05-27 21:44:46.321145",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "testtype_name",
+  "analyticaldept_aname",
+  "note",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "testtype_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "testtype_name",
+   "options": "lab_test_types",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "is_active"
+  },
+  {
+   "fieldname": "analyticaldept_aname",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "analyticaldept_aname",
+   "options": "SBDMA Department"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-26 18:07:35.540542",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_item_testTypes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

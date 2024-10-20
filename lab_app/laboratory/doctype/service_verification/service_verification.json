@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "autoname": "format:question.#####",
+ "creation": "2024-10-17 20:06:33.705813",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "verification_type",
+  "status",
+  "note",
+  "enabel"
+ ],
+ "fields": [
+  {
+   "fieldname": "verification_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Verification Type",
+   "options": "Verification Type",
+   "reqd": 1
+  },
+  {
+   "default": "Recieve",
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabel",
+   "fieldtype": "Check",
+   "label": "Enabel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-17 20:09:38.436803",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Service Verification",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

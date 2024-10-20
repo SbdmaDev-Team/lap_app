@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "format:ITEM{#####}",
+ "creation": "2024-05-27 21:38:39.210962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_aname",
+  "item_ename",
+  "item_type",
+  "trade_name",
+  "scientific_name",
+  "column_break_6",
+  "strength",
+  "packaging",
+  "dosegeform",
+  "pack_no",
+  "is_active",
+  "section_break_12",
+  "stndmatitem_name",
+  "column_break_14",
+  "testitem_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "item_aname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_ename",
+   "fieldtype": "Data",
+   "label": "Ename",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "trade_name"
+  },
+  {
+   "fieldname": "scientific_name",
+   "fieldtype": "Data",
+   "label": "scientific_name"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "strength"
+  },
+  {
+   "fieldname": "packaging",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "packaging"
+  },
+  {
+   "default": "tablets",
+   "fieldname": "dosegeform",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Dosegeform",
+   "options": "tablets\nCapsules"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is_active"
+  },
+  {
+   "fieldname": "pack_no",
+   "fieldtype": "Data",
+   "label": "pack_no"
+  },
+  {
+   "default": "Medicine",
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "item_type",
+   "options": "Medicine\nDevice"
+  },
+  {
+   "fieldname": "stndmatitem_name",
+   "fieldtype": "Table",
+   "label": "stndmatItem_name",
+   "options": "lab_item_StndMat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "testitem_name",
+   "fieldtype": "Table",
+   "label": "testItem_name",
+   "options": "lab_item_testTypes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-03 23:30:26.448949",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_items_tmp",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

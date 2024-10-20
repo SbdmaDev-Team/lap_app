@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "format:{stndmate_type}-{stndmate_ename}",
+ "creation": "2024-05-27 00:32:11.582920",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stndmate_aname",
+  "stndmate_ename",
+  "stndmate_type",
+  "description",
+  "is_active",
+  "reg_user",
+  "reg_date",
+  "upd_user",
+  "upd_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "stndmate_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0627\u062f\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stndmate_ename",
+   "fieldtype": "Data",
+   "label": "Ename",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stndmate_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0645\u0627\u062f\u0629",
+   "options": "Primary\nSecondary"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "\u0648\u0635\u0641 \u0627\u0644\u0645\u0627\u062f\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "\u0641\u0639\u0627\u0644"
+  },
+  {
+   "fieldname": "reg_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Reg_User"
+  },
+  {
+   "fieldname": "reg_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Reg_Date"
+  },
+  {
+   "fieldname": "upd_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Upd_User"
+  },
+  {
+   "fieldname": "upd_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Upd_Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-04 22:05:37.746891",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_standMaterials",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "stndmate_aname",
+ "track_changes": 1
+}

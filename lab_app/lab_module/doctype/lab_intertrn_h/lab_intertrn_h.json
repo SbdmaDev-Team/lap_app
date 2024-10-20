@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "autoname": "format:TRN.#####",
+ "creation": "2024-05-29 00:36:53.129750",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trn_date",
+  "trntype_name",
+  "column_break_3",
+  "type",
+  "dep_name",
+  "status",
+  "column_break_7",
+  "description",
+  "note",
+  "send_user",
+  "send_date",
+  "recieve_user",
+  "recieve_date",
+  "section_break_14",
+  "trn_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "trn_date",
+   "fieldtype": "Date",
+   "label": "trn_date"
+  },
+  {
+   "fieldname": "trntype_name",
+   "fieldtype": "Link",
+   "label": "trntype_name",
+   "options": "lab_internalTrn_types",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "type",
+   "options": "1\n-1",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "1\n2"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "fieldname": "send_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "send_user"
+  },
+  {
+   "fieldname": "send_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "send_date"
+  },
+  {
+   "fieldname": "recieve_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "recieve_user"
+  },
+  {
+   "fieldname": "recieve_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "recieve_date"
+  },
+  {
+   "fieldname": "trn_name",
+   "fieldtype": "Table",
+   "label": "trn_name",
+   "options": "lab_intertrn_d",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dep_name",
+   "fieldtype": "Data",
+   "label": "dep_name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-03 22:55:01.833505",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_intertrn_h",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

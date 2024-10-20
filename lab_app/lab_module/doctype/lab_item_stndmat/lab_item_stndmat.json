@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "autoname": "format:{item_name}-{stndmate_name}",
+ "creation": "2024-05-28 23:07:38.434020",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stndmate_name",
+  "note",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "stndmate_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "stndmate_name",
+   "options": "lab_standMaterials",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "is_active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 23:25:17.336343",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_item_StndMat",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

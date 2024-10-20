@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:department_aname",
+ "creation": "2024-05-27 00:11:11.382361",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department_aname",
+  "department_ename",
+  "department_head",
+  "department_specialist",
+  "parent_sbdma_department",
+  "parent_department_head",
+  "enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department Aname",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "department_ename",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department Ename",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "department_head",
+   "fieldtype": "Data",
+   "label": "Department Head",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department_specialist",
+   "fieldtype": "Data",
+   "label": "Department Specialist",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parent_sbdma_department",
+   "fieldtype": "Data",
+   "label": "Parent SBDMA Department"
+  },
+  {
+   "fieldname": "parent_department_head",
+   "fieldtype": "Data",
+   "label": "Parent Department Head"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-26 18:17:29.528795",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "SBDMA Department",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

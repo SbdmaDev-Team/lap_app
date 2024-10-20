@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "autoname": "format:{orderDetail_name}-{doc_name}",
+ "creation": "2024-05-28 22:59:24.403965",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "doc_name",
+  "doc_no",
+  "start_date",
+  "end_date",
+  "doc_file",
+  "note",
+  "is_checked",
+  "checked_date",
+  "checked_user",
+  "is_reviewed",
+  "reviewed_date",
+  "reviewed_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "order_name",
+   "options": "lab_orders"
+  },
+  {
+   "fieldname": "doc_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "doc_name",
+   "options": "lab_Documents",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "doc_no"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date"
+  },
+  {
+   "fieldname": "doc_file",
+   "fieldtype": "Attach",
+   "label": "doc_file"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_checked",
+   "fieldtype": "Check",
+   "label": "is_checked"
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "checked_date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_user",
+   "fieldtype": "Data",
+   "label": "checked_user",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reviewed",
+   "fieldtype": "Check",
+   "label": "is_reviewed"
+  },
+  {
+   "fieldname": "reviewed_date",
+   "fieldtype": "Date",
+   "label": "reviewed_date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reviewed_user",
+   "fieldtype": "Data",
+   "label": "reviewed_user",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 23:46:28.094840",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_order_doc",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

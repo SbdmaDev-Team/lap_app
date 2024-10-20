@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "autoname": "format:{orderDetail_name}-{stndmat_name}",
+ "creation": "2024-05-28 23:10:30.637647",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "stndmat_name",
+  "item_name",
+  "stndmat_no",
+  "stndmat_type",
+  "start_date",
+  "end_date",
+  "note",
+  "checked_date",
+  "checked_user",
+  "is_reviewed",
+  "reviewed_date",
+  "reviewed_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "order_name",
+   "options": "lab_orders"
+  },
+  {
+   "fieldname": "stndmat_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "stndmat_name",
+   "options": "lab_standMaterials",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "checked_date"
+  },
+  {
+   "fieldname": "checked_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "checked_user"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reviewed",
+   "fieldtype": "Check",
+   "label": "is_reviewed"
+  },
+  {
+   "fieldname": "reviewed_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "reviewed_date"
+  },
+  {
+   "fieldname": "reviewed_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reviewed_user"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "item_name"
+  },
+  {
+   "fieldname": "stndmat_type",
+   "fieldtype": "Data",
+   "label": "stndmat_type"
+  },
+  {
+   "fieldname": "stndmat_no",
+   "fieldtype": "Data",
+   "label": "stndmat_no"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-04 00:01:41.882130",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_order_stndmat",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

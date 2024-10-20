@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:item_group",
+ "creation": "2024-10-20 00:30:51.187104",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_type",
+  "item_group",
+  "item_group_code",
+  "parent_item_group",
+  "is_group",
+  "lft",
+  "rgt",
+  "old_parent",
+  "parent_sbdma_item_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item Type",
+   "options": "Pharmaceutical Product\nMedical Device\nHerbal, Health and Cosmetic\nLocal Industry Input",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_item_group",
+   "fieldtype": "Link",
+   "label": "Parent Item Group",
+   "options": "Item Group"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "SBDMA Item Group"
+  },
+  {
+   "fieldname": "parent_sbdma_item_group",
+   "fieldtype": "Link",
+   "label": "Parent SBDMA Item Group",
+   "options": "SBDMA Item Group"
+  },
+  {
+   "fieldname": "item_group_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Group Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-10-20 19:20:23.914467",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "SBDMA Item Group",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_sbdma_item_group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "item_group"
+}

@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "autoname": "format:ORDDETL-{####}",
+ "creation": "2024-05-27 23:13:28.714138",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agnt_name",
+  "com_name",
+  "column_break_3",
+  "item_name",
+  "batch_no",
+  "section_break",
+  "mfg_date",
+  "expiry_date",
+  "column_break_9",
+  "sample_cnt",
+  "final_specification",
+  "ref_name",
+  "final_result",
+  "final_decision",
+  "completion_date",
+  "propuse",
+  "storage_condition",
+  "is_cerprint",
+  "cerprint_date",
+  "item_description",
+  "status",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "agnt_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "agnt_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "com_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "com_name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "item_name",
+   "options": "lab_items_tmp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "batch_no",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "mfg_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "mfg_date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "expiry_date",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "sample_cnt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "sample_cnt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "final_specification",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "final_specification"
+  },
+  {
+   "fieldname": "final_result",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "final_result"
+  },
+  {
+   "default": "0",
+   "fieldname": "final_decision",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "final_decision"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "completion_date"
+  },
+  {
+   "fieldname": "propuse",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "propuse"
+  },
+  {
+   "fieldname": "storage_condition",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "storage_condition"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cerprint",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "is_cerprint"
+  },
+  {
+   "fieldname": "cerprint_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "cerprint_date"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "item_description"
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "1\n2\n3\n4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "note"
+  },
+  {
+   "fieldname": "ref_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "ref_name",
+   "options": "lab_refrences_doc"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-04 22:28:20.533459",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_order_details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

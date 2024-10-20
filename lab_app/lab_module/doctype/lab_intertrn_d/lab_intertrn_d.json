@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "autoname": "format:TRNDETL.#####",
+ "creation": "2024-05-29 00:56:41.821874",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "orderdetail_name",
+  "type",
+  "item_name",
+  "batch_no",
+  "stndmat_name",
+  "qty",
+  "dept_rece_user",
+  "dept_rece_date",
+  "dept_rece_sample",
+  "dept_rece_doc",
+  "analyst_user",
+  "analyst_receve_date",
+  "analyst_receve_doc",
+  "analyst_receve_sample",
+  "analyst_recevedoc_date",
+  "is_recieved",
+  "is_completed",
+  "status",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Order_name",
+   "options": "lab_orders",
+   "read_only": 1
+  },
+  {
+   "fieldname": "orderdetail_name",
+   "fieldtype": "Link",
+   "label": "orderdetail_name",
+   "options": "lab_order_details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "type",
+   "options": "1\n-1"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "batch_no"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "qty"
+  },
+  {
+   "fieldname": "dept_rece_user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "dept_rece_user"
+  },
+  {
+   "fieldname": "dept_rece_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "dept_rece_date"
+  },
+  {
+   "default": "0",
+   "fieldname": "dept_rece_sample",
+   "fieldtype": "Check",
+   "label": "dept_rece_sample"
+  },
+  {
+   "default": "0",
+   "fieldname": "dept_rece_doc",
+   "fieldtype": "Check",
+   "label": "dept_rece_doc"
+  },
+  {
+   "fieldname": "analyst_user",
+   "fieldtype": "Data",
+   "label": "analyst_user"
+  },
+  {
+   "fieldname": "analyst_receve_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "analyst_receve_date"
+  },
+  {
+   "default": "0",
+   "fieldname": "analyst_receve_sample",
+   "fieldtype": "Check",
+   "label": "analyst_receve_sample"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_recieved",
+   "fieldtype": "Check",
+   "label": "is_recieved"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_completed",
+   "fieldtype": "Check",
+   "label": "is_completed"
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "status",
+   "options": "1\n2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "item_name",
+   "options": "lab_items_tmp"
+  },
+  {
+   "fieldname": "stndmat_name",
+   "fieldtype": "Data",
+   "label": "stndmat_name"
+  },
+  {
+   "fieldname": "analyst_recevedoc_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "analyst_recevedoc_date"
+  },
+  {
+   "default": "0",
+   "fieldname": "analyst_receve_doc",
+   "fieldtype": "Check",
+   "label": "analyst_receve_doc"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 23:07:30.086937",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_intertrn_d",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

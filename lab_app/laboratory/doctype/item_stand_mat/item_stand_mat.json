@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2024-10-17 19:46:22.723000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stnd_mat_aname",
+  "note",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "stnd_mat_aname",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stnd Mat Aname",
+   "options": "Stand Matrials",
+   "reqd": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-20 20:10:57.114643",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Item Stand Mat",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

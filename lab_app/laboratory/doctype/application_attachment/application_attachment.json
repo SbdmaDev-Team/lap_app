@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-02 22:23:00.459300",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attachment_type",
+  "mandatory",
+  "description",
+  "column_break_gyfze",
+  "has_date",
+  "attachment_no",
+  "start_date",
+  "end_date",
+  "column_break_ocsnc",
+  "attach_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "attachment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "options": "Attachment Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mandatory",
+   "fieldtype": "Select",
+   "label": "Mandatory",
+   "options": "Mandatory\nOptional"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_date",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Has Date"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "start_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "end_date",
+   "fieldtype": "Data",
+   "label": "End Date"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "attachment_no",
+   "fieldtype": "Data",
+   "label": "Attachment No"
+  },
+  {
+   "fieldname": "column_break_gyfze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ocsnc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-15 02:05:51.268001",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Application Attachment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

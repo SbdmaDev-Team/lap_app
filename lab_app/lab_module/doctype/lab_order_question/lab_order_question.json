@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "autoname": "format:{orderDetail_name}-{question_name}",
+ "creation": "2024-05-28 22:44:49.296709",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "question_name",
+  "answer",
+  "reason",
+  "status",
+  "note",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "order_name",
+   "options": "lab_orders"
+  },
+  {
+   "fieldname": "question_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "question_name",
+   "options": "lab_questions",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Select",
+   "label": "answer",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "reason"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Receipt\nReview"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is_active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 23:39:41.732233",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_order_question",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:establishment_type_aname",
+ "creation": "2024-09-02 23:25:35.406744",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "establishment_type_aname",
+  "establishment_type_ename",
+  "establishment_code",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "establishment_type_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Establishment Type Aname",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "establishment_type_ename",
+   "fieldtype": "Data",
+   "label": "Establishment Type Ename"
+  },
+  {
+   "fieldname": "establishment_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Establishment Code",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-02 23:25:55.027395",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Establishment Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "autoname": "field:instrument_aname",
+ "creation": "2024-10-19 23:59:45.377902",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instrument_aname",
+  "instrument_ename",
+  "company",
+  "model",
+  "sn",
+  "is_busy",
+  "enable",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "instrument_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instrument Aname",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "instrument_ename",
+   "fieldtype": "Data",
+   "label": "Instrument Ename"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "sn",
+   "fieldtype": "Data",
+   "label": "SN"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_busy",
+   "fieldtype": "Check",
+   "label": "IS Busy"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-20 00:00:21.674747",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Instruments",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "instrument_aname",
+ "track_changes": 1
+}

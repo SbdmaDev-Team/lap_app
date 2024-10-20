@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "autoname": "format:ORDTEST.####",
+ "creation": "2024-05-28 23:58:53.253160",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "analyticaldept_name",
+  "testtype_name",
+  "item_name",
+  "batch_no",
+  "instrument_name",
+  "specification",
+  "result",
+  "limit",
+  "sample_cnt",
+  "final_specification",
+  "ref_name",
+  "final_decision",
+  "completion_date",
+  "propuse",
+  "storage_condition",
+  "item_description",
+  "status",
+  "note",
+  "is_reviewed",
+  "reviewed_date",
+  "reviewed_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "order_name",
+   "options": "lab_orders"
+  },
+  {
+   "fieldname": "analyticaldept_name",
+   "fieldtype": "Link",
+   "label": "analyticaldept_name",
+   "options": "SBDMA Department"
+  },
+  {
+   "fieldname": "testtype_name",
+   "fieldtype": "Link",
+   "label": "testtype_name",
+   "options": "lab_test_types",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "label": "item_name",
+   "options": "lab_items_tmp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "batch_no"
+  },
+  {
+   "fieldname": "instrument_name",
+   "fieldtype": "Link",
+   "label": "instrument_name",
+   "options": "lab_instruments",
+   "reqd": 1
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "specification"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "result"
+  },
+  {
+   "fieldname": "limit",
+   "fieldtype": "Data",
+   "label": "limit"
+  },
+  {
+   "fieldname": "sample_cnt",
+   "fieldtype": "Int",
+   "label": "sample_cnt"
+  },
+  {
+   "fieldname": "final_specification",
+   "fieldtype": "Data",
+   "label": "final_specification"
+  },
+  {
+   "fieldname": "ref_name",
+   "fieldtype": "Link",
+   "label": "ref_name",
+   "options": "lab_refrences_doc"
+  },
+  {
+   "default": "0",
+   "fieldname": "final_decision",
+   "fieldtype": "Check",
+   "label": "final_decision"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "completion_date"
+  },
+  {
+   "fieldname": "propuse",
+   "fieldtype": "Data",
+   "label": "propuse"
+  },
+  {
+   "fieldname": "storage_condition",
+   "fieldtype": "Data",
+   "label": "storage_condition"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "label": "item_description"
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "1\n2"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "note"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reviewed",
+   "fieldtype": "Check",
+   "label": "is_reviewed"
+  },
+  {
+   "fieldname": "reviewed_date",
+   "fieldtype": "Date",
+   "label": "reviewed_date"
+  },
+  {
+   "fieldname": "reviewed_user",
+   "fieldtype": "Data",
+   "label": "reviewed_user"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-26 18:07:34.619912",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_order_test",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

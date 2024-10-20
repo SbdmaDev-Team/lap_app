@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "autoname": "format:TRN{#####}",
+ "creation": "2024-05-28 23:25:33.332985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_name",
+  "orderdetail_name",
+  "trn_date",
+  "column_break_4",
+  "com_name",
+  "description",
+  "note",
+  "status",
+  "section_break_9",
+  "trn_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "order_name",
+   "options": "lab_orders",
+   "read_only": 1
+  },
+  {
+   "fieldname": "orderdetail_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "orderdetail_name",
+   "options": "lab_order_details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trn_date",
+   "fieldtype": "Date",
+   "label": "trn_date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "status",
+   "options": "Regesteration\nReview",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "fieldname": "com_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "com_name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trn_name",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "trn_name",
+   "options": "lab_orderinfo_d",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-03 22:44:34.301616",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_orderinfo_h",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

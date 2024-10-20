@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "autoname": "format:TRNDETL-{#####}",
+ "creation": "2024-05-28 23:31:57.584618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "file",
+  "reply",
+  "note",
+  "replay_user",
+  "replay_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "description",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "reply",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "reply"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "note"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "file"
+  },
+  {
+   "fieldname": "replay_user",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "replay_user"
+  },
+  {
+   "fieldname": "replay_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "replay_date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-03 22:34:19.331801",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_orderinfo_d",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

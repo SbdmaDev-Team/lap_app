@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-17 20:59:59.156842",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "application_name",
+  "items",
+  "trade_name",
+  "generic_name",
+  "strength",
+  "primary_container",
+  "dosage_form",
+  "item_batches"
+ ],
+ "fields": [
+  {
+   "fieldname": "application_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application Name",
+   "options": "Pharmaceutical Product Analysis Application",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Items",
+   "options": "Items",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "label": "Trade Name"
+  },
+  {
+   "fieldname": "generic_name",
+   "fieldtype": "Data",
+   "label": "Generic Name"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "label": "Strength"
+  },
+  {
+   "fieldname": "primary_container",
+   "fieldtype": "Data",
+   "label": "Primary Container"
+  },
+  {
+   "fieldname": "dosage_form",
+   "fieldtype": "Data",
+   "label": "Dosage Form"
+  },
+  {
+   "fieldname": "item_batches",
+   "fieldtype": "Table",
+   "label": "Item Batches",
+   "options": "Item Batches Applications",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-20 21:00:14.193819",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Initial Pharmaceutical Product Application Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

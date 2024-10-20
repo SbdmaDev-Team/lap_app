@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "autoname": "format:{analyticaldept_code}-{####}",
+ "creation": "2024-05-27 00:06:34.442574",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "testtype_aname",
+  "testtype_ename",
+  "short_name",
+  "analyticaldept_code",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "testtype_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TestType_aname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "testtype_ename",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ename"
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shortname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "analyticaldept_code",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Analyticaldept_code",
+   "options": "SBDMA Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "is_active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-17 19:25:47.769103",
+ "modified_by": "Administrator",
+ "module": "Lab_module",
+ "name": "lab_test_types",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

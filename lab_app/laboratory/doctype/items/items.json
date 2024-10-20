@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "autoname": "field:item_aname",
+ "creation": "2024-10-17 19:47:21.722322",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "importe",
+  "importer_name",
+  "company",
+  "company_aname",
+  "item_aname",
+  "item_ename",
+  "item_group",
+  "item_group_code",
+  "trade_name",
+  "scientific_aname",
+  "column_break_6",
+  "strength",
+  "dosege_form",
+  "dosage_form_code",
+  "packaging",
+  "pack_no",
+  "is_active",
+  "section_break_12",
+  "item_stand_mat",
+  "column_break_14",
+  "item_test_types"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Aname",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item_ename",
+   "fieldtype": "Data",
+   "label": "Item Ename"
+  },
+  {
+   "fieldname": "trade_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trade Name"
+  },
+  {
+   "fieldname": "scientific_aname",
+   "fieldtype": "Data",
+   "label": "Scientific Aname"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Strength"
+  },
+  {
+   "fieldname": "packaging",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Packaging"
+  },
+  {
+   "default": "tablets",
+   "fieldname": "dosege_form",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dosege Form",
+   "options": "Dosage Form"
+  },
+  {
+   "fieldname": "pack_no",
+   "fieldtype": "Data",
+   "label": "Pack No"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_stand_mat",
+   "fieldtype": "Table",
+   "label": "Item Stand Mat",
+   "options": "Item Stand Mat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_test_types",
+   "fieldtype": "Table",
+   "label": "Item Test Types",
+   "options": "Item Test Types",
+   "reqd": 1
+  },
+  {
+   "fieldname": "importe",
+   "fieldtype": "Link",
+   "label": "Importe",
+   "options": "Establishment",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "importe.establishment_aname",
+   "fieldname": "importer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Importer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Establishment",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "company.establishment_aname",
+   "fieldname": "company_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Aname",
+   "read_only": 1
+  },
+  {
+   "default": "Medicine",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "SBDMA Item Group"
+  },
+  {
+   "fetch_from": "item_group.item_group_code",
+   "fieldname": "item_group_code",
+   "fieldtype": "Data",
+   "label": "Item Group Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "dosege_form.dosage_form_code",
+   "fieldname": "dosage_form_code",
+   "fieldtype": "Data",
+   "label": "Dosage Form Code",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-20 20:05:03.467633",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Items",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

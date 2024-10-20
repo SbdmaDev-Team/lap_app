@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "autoname": "format:{stand_mat_type}-{stand_mat_aname}",
+ "creation": "2024-10-17 19:41:06.847154",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stand_mat_aname",
+  "stand_mat_ename",
+  "stand_mat_type",
+  "description",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "stand_mat_aname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stand Mat Aname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stand_mat_ename",
+   "fieldtype": "Data",
+   "label": "Stand Mat Ename",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stand_mat_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stand Mat Type",
+   "options": "Primary\nSecondary"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "IS Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-17 19:42:11.083170",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Stand Matrials",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "stand_mat_aname",
+ "track_changes": 1
+}
