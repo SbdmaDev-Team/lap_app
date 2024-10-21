@@ -90,10 +90,11 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Item",
-   "options": "Sbdma Items",
+   "options": "SBDMA Item",
    "reqd": 1
   },
   {
+   "fetch_from": "item.trade_name",
    "fieldname": "trade_aname",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -106,6 +107,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "item.strength",
    "fieldname": "strength",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -113,6 +115,7 @@
    "read_only": 1
   },
   {
+   "fetch_from": "item.packaging",
    "fieldname": "primary_container",
    "fieldtype": "Data",
    "label": "Primary Container",
@@ -155,6 +158,7 @@
    "search_index": 1
   },
   {
+   "fetch_from": "item.scientific_aname",
    "fieldname": "generic_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -166,7 +170,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-09 20:12:03.643677",
+ "modified": "2024-10-21 16:36:25.635510",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Initial Pharmaceutical Product Application",

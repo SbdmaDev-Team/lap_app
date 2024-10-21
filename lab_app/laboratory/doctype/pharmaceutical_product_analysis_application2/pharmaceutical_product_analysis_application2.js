@@ -6,7 +6,7 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
             if (!frm.doc.ref_name) return;  // Exit if the field is empty
 		    frm.set_value('service_cataloge','تحليل صنف جديد');
             frappe.call({
-                method: 'lab_app.laboratory.doctype.pharmaceutical_product_analysis_application.pharmaceutical_product_analysis_application.get_preivios_app_data', 
+                method: 'lab_app.laboratory.doctype.pharmaceutical_product_analysis_application2.pharmaceutical_product_analysis_application2.get_preivios_app_data', 
                 // method: 'lab_app.laboratory.doctype.attachment_service.attachment_service.get_child_records', 
                  // Path to your server-side method
                 // method: 'lab_app.Laboratory.doctype.Initial Pharmaceutical Product Application.get_item_data',  // Path to your server-side method
@@ -23,6 +23,7 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
                         frm.set_value('generic_name', r.message.generic_name);
                         frm.set_value('primary_container', r.message.primary_container);
                         frm.set_value('strength', r.message.strength);
+                        frm.set_value('batch', r.message.batch);
                         // ... add more fields as necessary
                     }
 				}});
@@ -38,7 +39,7 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
             // else{ 
 
                 frappe.call({
-                    method: 'lab_app.laboratory.doctype.pharmaceutical_product_analysis_application.pharmaceutical_product_analysis_application.add_app_attach', 
+                    method: 'lab_app.laboratory.doctype.pharmaceutical_product_analysis_application2.pharmaceutical_product_analysis_application2.add_app_service', 
                     // method: 'lab_app.laboratory.doctype.attachment_service.attachment_service.get_child_records', 
                      // Path to your server-side method
                     // method: 'lab_app.Laboratory.doctype.Initial Pharmaceutical Product Application.get_item_data',  // Path to your server-side method
@@ -52,6 +53,7 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
                             // Set values to fields based on the returned data
                            // frappe.printmsg('hjghjgj');
                            frm.refresh_field('attachment');
+                           frm.refresh_field('verification');
                             // ... add more fields as necessary
                         }
                   

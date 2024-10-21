@@ -24,6 +24,7 @@
   "column_break_iet4j",
   "strength",
   "primary_container",
+  "qty",
   "batch",
   "attachment_tab_tab",
   "amended_from",
@@ -45,6 +46,7 @@
    "in_standard_filter": 1,
    "label": "Service Cataloge",
    "options": "Service Catalog",
+   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   },
@@ -65,6 +67,7 @@
    "fieldtype": "Link",
    "label": "Importer",
    "options": "Establishment",
+   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   },
@@ -73,6 +76,7 @@
    "fieldtype": "Link",
    "label": "Company",
    "options": "Establishment",
+   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   },
@@ -80,7 +84,8 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
-   "options": "Sbdma Items",
+   "options": "SBDMA Item",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -88,7 +93,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Pharmaceutical Product Analysis Application",
+   "options": "Pharmaceutical Product Analysis Application2",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -128,8 +133,7 @@
    "fieldname": "attachment",
    "fieldtype": "Table",
    "label": "Attachment",
-   "options": "Application Attachment",
-   "read_only": 1
+   "options": "Application Attachment"
   },
   {
    "fieldname": "column_break_iet4j",
@@ -171,12 +175,19 @@
    "fieldtype": "Table",
    "label": "Verification",
    "options": "Application Verification"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "qty",
+   "non_negative": 1,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-17 20:13:48.881154",
+ "modified": "2024-10-21 20:00:19.100934",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Pharmaceutical Product Analysis Application2",

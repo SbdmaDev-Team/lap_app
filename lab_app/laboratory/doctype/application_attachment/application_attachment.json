@@ -15,7 +15,8 @@
   "start_date",
   "end_date",
   "column_break_ocsnc",
-  "attach_file"
+  "attach_file",
+  "answer"
  ],
  "fields": [
   {
@@ -43,11 +44,12 @@
    "default": "0",
    "fieldname": "has_date",
    "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Has Date"
+   "label": "Has Date",
+   "read_only": 1
   },
   {
    "allow_in_quick_entry": 1,
+   "depends_on": "has_date",
    "fieldname": "start_date",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -77,12 +79,18 @@
    "fieldname": "attach_file",
    "fieldtype": "Attach",
    "label": "Attach File"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Select",
+   "label": "Answer",
+   "options": "YES\nNO"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-09-15 02:05:51.268001",
+ "modified": "2024-10-21 20:24:07.223971",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Application Attachment",

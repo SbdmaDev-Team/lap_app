@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:question.#####",
+ "autoname": "field:verification_aname",
  "creation": "2024-10-17 20:02:06.569573",
  "default_view": "List",
  "doctype": "DocType",
@@ -15,16 +15,17 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Verification Aname",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-17 20:02:06.569573",
+ "modified": "2024-10-21 17:54:56.066576",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Verification Type",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
