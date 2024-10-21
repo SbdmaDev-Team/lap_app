@@ -80,7 +80,7 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
-   "options": "Sbdma Items",
+   "options": "SBDMA Item",
    "reqd": 1
   },
   {
@@ -176,7 +176,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-17 20:13:48.881154",
+ "modified": "2024-10-21 17:33:58.599217",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Pharmaceutical Product Analysis Application2",
