@@ -21,6 +21,7 @@ def get_preivios_app_data(name):
         data['strength'] = appdata.strength
         data['generic_name'] = appdata.generic_name
         data['trade_aname'] = appdata.trade_aname
+        data['batch'] = appdata.batch
         # ... add more fields as necessary
     return data
 
@@ -51,28 +52,63 @@ def get_preivios_app_data(name):
 
 #     # frappe.msgprint(f"Items from Sales Order {name} have been copied to Delivery Note {service_name}")
 
+
 @frappe.whitelist()
+def add_app_service(name, service_name):
+    add_app_attach(name, service_name)
+    add_app_verification(name, service_name)
+
+
 def add_app_attach(name, service_name):
     # frappe.msgprint("Items from Sales Order")
     # Get the Sales Order document with its items (source child doctype)
-    analiysis_doc = frappe.get_doc('Pharmaceutical Product Analysis Application', name)
+    analiysis_doc = frappe.get_doc('Pharmaceutical Product Analysis Application2', name)
+    if not analiysis_doc.attachment:
+
+        # Get the Delivery Note document where you want to append the items
+        service_attach = frappe.get_doc('Service Catalog', service_name)
     
-    # Get the Delivery Note document where you want to append the items
-    service_attach = frappe.get_doc('Service Catalog', service_name)
-    
-    # Loop through each item in the Sales Order Item child table
-    for attch in service_attach.attachments:
-        # Append each item to the Delivery Note Item child table
-        analiysis_doc.append('attachment', {
-             "attachment_type": attch.attachment_type,
-             "mandatory": attch.mandatory,
-             "description": attch.description
+        # Loop through each item in the Sales Order Item child table
+        for attch in service_attach.attachments:
+            # Append each item to the Delivery Note Item child table
+            analiysis_doc.append('attachment', {
+                "attachment_type": attch.attachment_type,
+                "mandatory": attch.mandatory,
+                "description": attch.description,
+                "has_date": attch.has_date
              })
     
-    # Save the Delivery Note with the new items
-    analiysis_doc.save()
+        # Save the Delivery Note with the new items
+        analiysis_doc.save()
 
-    # Optionally commit if this is outside a transaction (Frappe generally handles transactions)
-    frappe.db.commit()
+        # Optionally commit if this is outside a transaction (Frappe generally handles transactions)
+        frappe.db.commit()
 
-    # frappe.msgprint(f"Items from Sales Order {name} have been copied to Delivery Note {service_name}")
+        # frappe.msgprint(f"Items from Sales Order {name} have been copied to Delivery Note {service_name}")
+
+
+def add_app_verification(name, service_name):
+    # frappe.msgprint("Items from Sales Order")
+    # Get the Sales Order document with its items (source child doctype)
+    analiysis_doc = frappe.get_doc('Pharmaceutical Product Analysis Application2', name)
+    if not analiysis_doc.verification:
+        # Get the Delivery Note document where you want to append the items
+        service_attach = frappe.get_doc('Service Catalog', service_name)
+    
+        # Loop through each item in the Sales Order Item child table
+        for attch in service_attach.verification:
+            # Append each item to the Delivery Note Item child table
+            analiysis_doc.append('verification', {
+                "verification_type": attch.verification_type,
+                "status": attch.status,
+                "note": attch.note
+             })
+    
+            # Save the Delivery Note with the new items
+        analiysis_doc.save()
+
+        # Optionally commit if this is outside a transaction (Frappe generally handles transactions)
+        frappe.db.commit()
+
+        # frappe.msgprint(f"Items from Sales Order {name} have been copied to Delivery Note {service_name}")
+

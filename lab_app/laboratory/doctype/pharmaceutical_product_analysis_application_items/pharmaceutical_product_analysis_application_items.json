@@ -16,7 +16,8 @@
   "scientific_aname",
   "strength",
   "primary_container",
-  "dosage_form"
+  "dosage_form",
+  "batches"
  ],
  "fields": [
   {
@@ -85,13 +86,20 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Item",
-   "options": "Items",
+   "options": "SBDMA Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batches",
+   "fieldtype": "Table",
+   "label": "Batches",
+   "options": "Item Batches Applications",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-20 21:59:29.447659",
+ "modified": "2024-10-20 23:00:47.117166",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Pharmaceutical Product Analysis Application Items",
@@ -111,6 +119,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

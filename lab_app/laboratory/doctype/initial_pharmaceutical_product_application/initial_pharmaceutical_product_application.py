@@ -14,18 +14,18 @@ class InitialPharmaceuticalProductApplication(Document):
     #     self.strength: doc.strength
     #     self.generic_name: doc.generic_name
     #     self.trade_aname: doc.trade_aname
-@frappe.whitelist()
-def get_item_data(name):
-    data = {}
-    # Fetch data from another doctype
-    item = frappe.get_doc('Sbdma Items', name)  # Replace 'Customer' with your source doctype
-    if item:
-        data['primary_container'] = item.primary_container
-        data['strength'] = item.strength
-        data['generic_name'] = item.primary_container
-        data['trade_aname'] = item.strength
-        # ... add more fields as necessary
-    return data
+# @frappe.whitelist()
+# def get_item_data(name):
+#     data = {}
+#     # Fetch data from another doctype
+#     item = frappe.get_doc('Sbdma Item', name)  # Replace 'Customer' with your source doctype
+#     if item:
+#         data['primary_container'] = item.primary_container
+#         data['strength'] = item.strength
+#         data['generic_name'] = item.primary_container
+#         data['trade_aname'] = item.strength
+#         # ... add more fields as necessary
+#     return data
 
 
 
