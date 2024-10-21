@@ -5,6 +5,14 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
 	 onload: function(frm) {
             if (!frm.doc.ref_name) return;  // Exit if the field is empty
 		    frm.set_value('service_cataloge','تحليل صنف جديد');
+            if (frm.doc.has_date === 1) {  // Change the condition as per your requirement
+                frm.set_df_property('start_date', 'hidden', false);  // Show this field
+                frm.set_df_property('end_date', 'hidden', false);   // Hide this field
+            } else {
+                frm.set_df_property('end_date', 'hidden', true);
+                frm.set_df_property('end_date', 'hidden', true);
+            }
+            
             frappe.call({
                 method: 'lab_app.laboratory.doctype.pharmaceutical_product_analysis_application2.pharmaceutical_product_analysis_application2.get_preivios_app_data', 
                 // method: 'lab_app.laboratory.doctype.attachment_service.attachment_service.get_child_records', 
@@ -32,7 +40,6 @@ frappe.ui.form.on('Pharmaceutical Product Analysis Application2', {
             
 
         },
-
         after_save: function(frm) {
             // Add a custom button on the form
             // if (frm.doc.attachment !== null ) return;
