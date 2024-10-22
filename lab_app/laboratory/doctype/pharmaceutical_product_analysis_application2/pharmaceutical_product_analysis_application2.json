@@ -85,9 +85,7 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
-   "options": "SBDMA Item",
-   "read_only": 1,
-   "reqd": 1
+   "options": "SBDMA Item"
   },
   {
    "fieldname": "amended_from",
@@ -194,7 +192,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2024-10-21 23:11:35.977148",
+=======
+ "modified": "2024-10-22 18:24:01.350276",
+>>>>>>> 69f290d481600c54d9d6c263fc93efb2ceddc33a
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Pharmaceutical Product Analysis Application2",

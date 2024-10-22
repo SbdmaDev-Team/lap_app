@@ -1,0 +1,117 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"6tYGQTU7z9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Laboratory</span>\",\"col\":12}},{\"id\":\"srnVrlBDE9\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"4nulTVywMe\",\"type\":\"card\",\"data\":{\"card_name\":\"Applications\",\"col\":4}}]",
+ "creation": "2024-10-22 18:42:27.078896",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "healthcare",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Lab MS",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SBDMA Item",
+   "link_count": 0,
+   "link_to": "SBDMA Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service Catalog",
+   "link_count": 0,
+   "link_to": "Service Catalog",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "International References",
+   "link_count": 0,
+   "link_to": "International References",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Instruments",
+   "link_count": 0,
+   "link_to": "Instruments",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Establishment",
+   "link_count": 0,
+   "link_to": "Establishment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Applications",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pharmaceutical Product Analysis Application2",
+   "link_count": 0,
+   "link_to": "Pharmaceutical Product Analysis Application2",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Initial Pharmaceutical Product Application",
+   "link_count": 0,
+   "link_to": "Initial Pharmaceutical Product Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-10-22 18:51:01.828830",
+ "modified_by": "Administrator",
+ "module": "Laboratory",
+ "name": "Lab MS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 15.0,
+ "shortcuts": [],
+ "title": "Lab MS"
+}

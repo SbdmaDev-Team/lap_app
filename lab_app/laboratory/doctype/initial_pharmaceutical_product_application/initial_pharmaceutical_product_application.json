@@ -9,12 +9,15 @@
  "engine": "InnoDB",
  "field_order": [
   "details_tab",
-  "naming_series",
   "service_cataloge",
-  "section_break_am9pl",
+  "column_break_blka4",
+  "naming_series",
+  "section_break_rujeo",
   "send_date",
+  "section_break_am9pl",
+  "column_break_pvh4w",
   "importer",
-  "section_break_4bgu8",
+  "column_break_ykqlc",
   "company",
   "section_break_fuwrx",
   "item",
@@ -56,6 +59,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "default": "Today",
    "fieldname": "send_date",
    "fieldtype": "Date",
    "hidden": 1,
@@ -69,10 +73,6 @@
    "label": "Importer",
    "options": "Establishment",
    "reqd": 1
-  },
-  {
-   "fieldname": "section_break_4bgu8",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "company",
@@ -165,12 +165,28 @@
    "in_preview": 1,
    "label": "Generic Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_blka4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pvh4w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rujeo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ykqlc",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-10-21 16:36:25.635510",
+ "modified": "2024-10-22 18:22:34.830272",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Initial Pharmaceutical Product Application",
