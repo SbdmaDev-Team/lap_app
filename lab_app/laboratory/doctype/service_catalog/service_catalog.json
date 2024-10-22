@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_rename": 1,
  "autoname": "field:service_aname",
  "creation": "2024-09-01 22:35:42.094119",
  "default_view": "List",
@@ -10,6 +11,8 @@
   "appsource_aname",
   "service_aname",
   "service_ename",
+  "service_code",
+  "item_group",
   "attachment_tab_tab",
   "attachments",
   "verifications_tab_tab",
@@ -59,11 +62,24 @@
    "fieldtype": "Table",
    "label": "Verification",
    "options": "Service Verification"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "SBDMA Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_code",
+   "fieldtype": "Data",
+   "label": "Service Code",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-17 20:12:10.437702",
+ "modified": "2024-10-21 22:47:49.858023",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Service Catalog",

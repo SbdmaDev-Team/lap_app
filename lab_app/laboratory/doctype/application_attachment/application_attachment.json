@@ -37,19 +37,19 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Description",
-   "reqd": 1
+   "label": "Description"
   },
   {
    "default": "0",
    "fieldname": "has_date",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Has Date",
    "read_only": 1
   },
   {
    "allow_in_quick_entry": 1,
-   "depends_on": "doc.has_date",
+   "depends_on": "eval: doc.has_date == 1",
    "fieldname": "start_date",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -57,7 +57,7 @@
   },
   {
    "allow_in_quick_entry": 1,
-   "depends_on": "eval(doc.has_date='1')",
+   "depends_on": "eval: doc.has_date == '1'",
    "fieldname": "end_date",
    "fieldtype": "Data",
    "label": "End Date"
@@ -91,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-10-21 21:02:49.984585",
+ "modified": "2024-10-21 22:12:54.237035",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Application Attachment",

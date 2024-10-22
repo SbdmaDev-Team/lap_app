@@ -18,8 +18,7 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Description",
-   "reqd": 1
+   "label": "Description"
   },
   {
    "fieldname": "status",
@@ -48,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-01 22:47:07.446503",
+ "modified": "2024-10-21 22:11:30.979517",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Attachment Type",
