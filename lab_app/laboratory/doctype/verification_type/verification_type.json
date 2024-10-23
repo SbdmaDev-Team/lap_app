@@ -14,13 +14,12 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Verification Aname",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-21 22:00:47.205820",
+ "modified": "2024-10-23 19:23:27.823452",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Verification Type",
@@ -44,5 +43,6 @@
  "sort_order": "DESC",
  "states": [],
  "title_field": "verification_aname",
- "track_changes": 1
+ "track_changes": 1,
+ "translated_doctype": 1
 }

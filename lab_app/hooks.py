@@ -142,4 +142,22 @@ app_license = "MIT"
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
+fixtures = [
+    {
+        "dt": "Workflow",
+        "filters":{
+            "name":"Laboratory Workflow"
+        }
 
+    },
+      {
+        "dt": "Workflow State",
+        "filters":[
+            [
+            "name","in",("Sent","Verified","Distribute","analysis","Initial Verified","Incomplate","Closed","Receive","Initial Review","Review","Final Review")
+            ]
+        ]        
+
+    }
+
+]

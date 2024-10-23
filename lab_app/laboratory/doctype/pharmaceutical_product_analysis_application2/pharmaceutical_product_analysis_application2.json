@@ -11,8 +11,8 @@
   "details_tab",
   "ref_name",
   "naming_series",
-  "application_date",
   "service_cataloge",
+  "application_date",
   "section_break_am9pl",
   "send_date",
   "importer",
@@ -25,8 +25,9 @@
   "column_break_iet4j",
   "strength",
   "primary_container",
-  "qty",
   "batch",
+  "section_break_54nof",
+  "qty",
   "attachment_tab_tab",
   "amended_from",
   "attachment",
@@ -99,7 +100,7 @@
   },
   {
    "fieldname": "section_break_4bgu8",
-   "fieldtype": "Section Break"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_fuwrx",
@@ -187,16 +188,16 @@
    "fieldname": "application_date",
    "fieldtype": "Date",
    "label": "Application Date"
+  },
+  {
+   "fieldname": "section_break_54nof",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
-<<<<<<< HEAD
- "modified": "2024-10-21 23:11:35.977148",
-=======
- "modified": "2024-10-22 18:24:01.350276",
->>>>>>> 69f290d481600c54d9d6c263fc93efb2ceddc33a
+ "modified": "2024-10-23 19:26:21.760843",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Pharmaceutical Product Analysis Application2",
