@@ -53,7 +53,7 @@ frappe.ui.form.on('Initial Pharmaceutical Product Application', {
             var new_application = frappe.model.get_new_doc('Pharmaceutical Product Analysis Application2');          
             new_application.ref_name = frm.doc.name;
             
-            frappe.set_route('Form', 'Pharmaceutical Product Analysis Application2',new_application.name);
+            frappe.set_route('Form', 'pharmaceutical-product-analysis-application2',new_application.name);
          // frappe.set_route('Form', 'pharmaceutical-product-analysis-application',{ref_name:frm.doc.name});
         }, __('أضافة')); // Group under "Utilities"
         }

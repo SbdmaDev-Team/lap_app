@@ -79,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-23 18:52:55.878414",
+ "modified": "2024-10-24 22:36:59.685856",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "Service Catalog",
@@ -97,6 +97,15 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lab User",
+   "share": 1
   }
  ],
  "sort_field": "modified",

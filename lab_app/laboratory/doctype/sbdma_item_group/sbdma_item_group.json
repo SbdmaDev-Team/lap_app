@@ -91,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2024-10-20 19:20:23.914467",
+ "modified": "2024-10-24 22:38:28.775433",
  "modified_by": "Administrator",
  "module": "Laboratory",
  "name": "SBDMA Item Group",
@@ -110,6 +110,16 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lab User",
+   "share": 1
   }
  ],
  "show_title_field_in_link": 1,
